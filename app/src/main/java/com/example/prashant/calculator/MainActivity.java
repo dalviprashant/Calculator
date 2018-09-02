@@ -14,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
     double ans=0;
     double num=0;
     char op='#';
-    int flag,dec_flag=0,div=10;
+    int flag,dec_flag;
+    double div;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button b;
        flag=0;
+       dec_flag=0;
+       div=10;
 
 
     }
@@ -39,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
         {
             case R.id.b0:
                 if(dec_flag==0)
-                num=num*10;
+                    num=num*10;
                 else
-                    num+=0/div;
+                    num+=(0/div);
                 //ss=Integer.toString(num);
                 t.setText(t.getText()+"0");
                 break;
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+1;
                 else
-                    num+=1/div;
+                    num+=(1/div);
                  //ss=Integer.toString(num);
                 t.setText(t.getText()+"1");
                 break;
@@ -57,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+2;
                 else
-                    num+=2/div;
+                    num+=(2/div);
                //  ss=Integer.toString(n);
                 t.setText(t.getText()+"2");
                 break;
@@ -65,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+3;
                 else
-                    num+=3/div;
+                    num+=(3/div);
                  //ss=Integer.toString(n);
                 t.setText(t.getText()+"3");
                 break;
@@ -73,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+4;
                 else
-                    num+=4/div;
+                    num+=(4/div);
                 //ss=Integer.toString(n);
                 t.setText(t.getText()+"4");
                 break;
@@ -81,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+5;
                 else
-                    num+=5/div;
+                    num+=(5/div);
                // ss=Integer.toString(n);
                 t.setText(t.getText()+"5");
                 break;
@@ -89,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+6;
                 else
-                    num+=6/div;
+                    num+=(6/div);
                // ss=Integer.toString(n);
                 t.setText(t.getText()+"6");
                 break;
@@ -97,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+7;
                 else
-                    num+=7/div;
+                    num+=(7/div);
               //  ss=Integer.toString(n);
                 t.setText(t.getText()+"7");
                 break;
@@ -105,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+8;
                 else
-                    num+=8/div;
+                    num+=(8/div);
                // ss=Integer.toString(n);
                 t.setText(t.getText()+"8");
                 break;
@@ -113,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 if(dec_flag==0)
                     num=num*10+9;
                 else
-                    num+=9/div;
+                    num+=(9/div);
                // ss=Integer.toString(n);
                 t.setText(t.getText()+"9");
                 break;
